@@ -1,0 +1,42 @@
+# Team Members
+
+# Abhinav Veeragandham - G01515455
+# Pranav Vangavety - G01511443
+# Charan Sri Sai Devalla - G01504177
+# Bhogeswara Pathakamudi - G01507114
+# Durga Shankar Kondaveeti - G01510533
+
+
+# This is kubeconfig file of swe645studentsurvey cluster on Rnacher.
+apiVersion: v1
+kind: Config
+clusters:
+- name: "swe645studentsurvey"
+  cluster:
+    server: "https://ec2-52-23-7-157.compute-1.amazonaws.com/k8s/clusters/c-m-24qfjv8n"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      GMwTVRjeQpOVEEyT1RBZUZ3MHlOVEF6TVRFeU1ETXhNRGxhRncwek5UQXpNRGt5TURNeE1EbGFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE56UXhOekkxTURZNU1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRU5jbVViREJFcUJ2TQp6cTJpb3hUWTBFMHRQdlV1bnpyVTY5bFRad\
+      FRBNFFXTjI5Nit5M1ZhNTVTR2NUS1RPZjJoQ0RlN3RKczNnV1BhCkJlazg1NExETzZOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGS\
+      E1CSGd2aExObTQ4VU1DRitnWjFtdG1WUThrTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSVFDVwpzb\
+      2h5TmNCVFY2Q2pXSlpRT0paSm1zcGo1QzBYMUVlbHh2eTNVd0tnSXdJZ1Q0cHFqK3FqOTRHckRVe\
+      mlqbzBOCjdrekVEejNQcC8vdkhmdksxYjlaSVpNPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "swe645studentsurvey"
+  user:
+    token: "kubeconfig-user-8vss26jq7j:vmwmqbt55hv5ftmw9fl9499vb4ss2jwdqjgf6df268tn8rncrvrs65"
+
+
+contexts:
+- name: "swe645studentsurvey"
+  context:
+    user: "swe645studentsurvey"
+    cluster: "swe645studentsurvey"
+
+current-context: "swe645studentsurvey"
