@@ -2,6 +2,8 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+        KUBE_CONFIG_PATH = "/home/ubuntu/.kube/config"
+        PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/snap/bin"
     }
     stages {
         stage('Build Docker Image') {
